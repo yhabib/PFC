@@ -29,7 +29,7 @@ declare RECORDTIME
 declare PLAYTIME 
 declare POS1
 declare POS2
-declare key=
+declare waitingTime
 #declare CURRENTDIR=`pwd`
 #------------------------------------------------------------------------------------------------------------------------------------
 
@@ -77,7 +77,7 @@ showConfig()
 confirmacion()
 {
 	while true;  do
-		echo;read -p "Está seguro de los valores introducidos o desea reiniciar el proceso? (s/n)" yn
+		echo;read -p "Está seguro de los valores introducidos o desea reiniciar el proceso? (s/n)" yn																																																															
 		case $yn in
 			s ) break;;
 			n ) bash record.sh;;
@@ -94,24 +94,25 @@ gotDirectorio()
 }
 #------------------------------------------------------------------------------------------------------------------------_
 
-#Code
+#Code																																																																													
 echo "Script basado en FFMPEG para la grabación de video y audio."
 echo "Asistente par la creación de una sesión de grabación"
 echo "Configuraciones disponibles" && cd Configuraciones && ls
 read -p "Que configuración quiere utilizar??" FILE
 
 loadFile $FILE
-showConfig
+showConfig																																																																																																																																																															
 confirmacion
 gotDirectorio $RUTAVIDEOS
-#waitingTime=`expr $PLAYTIME \* 60`
+waitingTime=900
+contador=$((PLAYTIME/15))
 
-while [ "$key" != "q" ]; do
+while [ $contador>0 ]; do
 	dateDMY=$(date +%d%b%Y)
 	dateHM=`date +%H:%M`
 	gotDirectorio $RUTAVIDEOS/$dateDMY
 	gotDirectorio $RUTAVIDEOS/$dateDMY/$dateHM
-	lanzarFFmpeg
-	echo "Press 'q' key to quit"
-	read -t 10000 key
+	lanzarFFmpeg && contador=$((contador-1))
+	echo "Press 'Ctrl+C' to exit from the record, next record will start in $waitingTime" && sleep $waitingTime
+	
 done

@@ -1,11 +1,11 @@
 #!/bin/bash
 
 #*****************************************************************************************************************************#
-#									Record: Script para la configuración de la sesión 										  #	
+#									generacionArchivos: Para generar un archivo con los dos videos más el audio						  #	
 #*****************************************************************************************************************************#
 
 #-----------------------------------------------------------------------------------------------------------------------------#
-#La interfaz recopila la informaciń necesaria para la sesión de grabación, esto es: el nº de pantallas, la inclusión o no del #
+#La interfaz recopila la información necesaria para la sesión de grabación, esto es: el nº de pantallas, la inclusión o no del #
 #audio, el tiempo de grabación,...										    #
 #Se creará una carpeta para la sesion total, luego otra para cada dia de grabación y un más puqueña en función del tamaño	  #
 #final de los archivos																										  #
@@ -14,37 +14,40 @@
 #3 monitores. Valores posibles i,d--> ÑLuego opero. Trabajar con strings  para la posion del monitor hacer una funcion.#
 #-----------------------------------------------------------------------------------------------------------------------------#
 
+
 clear
 
 #Variables
-declare RES1=1280x1024
-declare RES2=1366x768
-declare FPS=10
-declare RECORDTIME=00:01:00
-declare POS1=0
-declare POS2=1280
-declare path=~/Proyecto/Grabaciones
-#------------------------------------------------------------------------------------------------------------------------------------
+declare video1
+declare video2
+declare audio
+declare output
+declare folder
+#------------------------------------------------------------------------------------------------------------------------_
 
-#Funciones
+#Code
+path=~/Proyecto/Grabaciones
 
-lanzarFFplay()
-{
-	cd ~/bin && gnome-terminal --tab -e "./ffplay $1" 
-}
-#-----------------------------------------------------------------------------------
-
-echo "Script basado en FFmplay"
-cd ~/Proyecto/Grabaciones
+echo "Script basado ...."
+cd $path
 echo "Dias disponibles" && ls
 read -p "Día?" dia
 cd $dia
 echo "Sesiones disponibles" && ls
 read -p "Sesión?" sesion
 cd $sesion
-path=$path/$dia/$sesion
 
-#for f in * ; do lanzarFFplay $path/"$f" ; done
-echo $path
-sleep 2
-lanzarFFplay $path/Pantalla1.mp4 && lanzarFFplay $path/Pantalla2.mp4
+folder=$path/$dia/$sesion
+video1=$folder/Pantalla1.mp4
+video2=$folder/Pantalla2.mp4
+video=$folder/Pantalla1Audio.mp4
+audio=$folder/Audio.mp3
+output=$folder/Overlay.mp4
+
+#Concateno audio y pantalla1
+cd ~/bin && ./ffmpeg -i $video1 -i $audio -c:v copy -c:a aac -strict experimental $video
+
+#Genero archivo overlay con pantalla1, pantalla2, y audio
+#cd ~/bin && ./ffmpeg -i $video1 -i $video2 -i $audio  -filter_complex "[0:v]setpts=PTS-STARTPTS, pad=iw*2:ih[bg]; \
+#[1:v]setpts=PTS-STARTPTS[fg]; [bg][fg]overlay=w" $output
+

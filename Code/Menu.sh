@@ -32,24 +32,28 @@ while true; do
 	echo "1. Grabación de la estación"
 	 
 	tput cup 8 15
-	echo "2. Reproducción de la estación"
-	 
+	echo "2. Generación de arhivos reproducibles"
+
 	tput cup 9 15
-	echo "3. Información"
+	echo "3. Lanzar VLC para reproducción de estación"
 	 
 	tput cup 10 15
-	echo "4. Salir"
+	echo "4. Información"
+	 
+	tput cup 11 15
+	echo "5. Salir"
 	 
 	# Set bold mode 
 	tput bold
-	tput cup 12 15
+	tput cup 13 15
 	read -p "Enter your choice [1-4] " opcion
 
 case $opcion in
 	1) bash Menu2.sh;;
-	2) df;;
-	3) uname -r;;
-	4) echo "Adiós";
+	2) bash generacionArchivos.sh;;
+	3) vlc;;
+	4) uname -r;;
+	5) echo "Adiós";
 	   exit 1;;
 *)	 
 	tput clear

@@ -40,8 +40,12 @@ list=$folder/mylist"-"`date +%H:%M`.txt
 echo "Comenzando grabación ..."
 echo -e "\aPuedes minimizar esta ventana, pues la grabación comenzará en 4 segundos..."
 sleep 4
-for (( i=0; i<2; i+=1)); do	
+for (( i=0; i<15; i+=1)); do	
 	file=$folder/`date +%H:%M:%S:%4N`.mp3
 	cd $RUTAFFMPEG && ./ffmpeg -f alsa -i hw:0 -codec:a libmp3lame -qscale:a 4 -t $RECORDTIME $file && printf "file '"$file"'\n" >> $list
 done
+echo "Se va a proceder a generar el archivo concatenado de las 15 instancias de audio" && sleep 5
 bash $CURRENTDIR/concat.sh $list $folder.mp3
+echo "Se va a proceder a generar un archivo conjunto de las tres sesiones" 
+sleep 10
+bash $CURRENTDIR/overlay.sh $RUTAVIDEOS

@@ -19,9 +19,9 @@ clear
 #Variables
 
 declare directorio=$1
-declare nameFile=$2
+declare folder=$2
 #------------------------------------------------------------------------------------------------------------------------_
 
 #Code
 cd directorio
-ffmpeg -f concat -i $directorio -c copy $nameFile
+ffmpeg -f concat -i $directorio -c copy $folder

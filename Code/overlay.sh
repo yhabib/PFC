@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #*****************************************************************************************************************************#
-#									Overlay: Script para la configuración de la sesión 										  #	
+#									Overlay: Para generar un archivo con los dos videos más el audio						  #	
 #*****************************************************************************************************************************#
 
 #-----------------------------------------------------------------------------------------------------------------------------#
@@ -21,9 +21,25 @@ clear
 declare video1
 declare video2
 declare audio
-declare output 
+declare output
+declare folder=$1
 #------------------------------------------------------------------------------------------------------------------------_
 
 #Code
+#cd $folder 
+video1=$folder/Pantalla1.mp4
+video2=$folder/Pantalla2.mp4
+audio=$folder/Audio.mp3
+output=$folder/Overlay.mp4
+
+echo $folder
+echo $video1
+echo $video2
+echo $audio
+
+sleep 10
 cd ~/bin && ./ffmpeg -i $video1 -i $video2 -i $audio  -filter_complex "[0:v]setpts=PTS-STARTPTS, pad=iw*2:ih[bg]; \
-[1:v]setpts=PTS-STARTPTS[fg]; [bg][fg]overlay=w" output
+[1:v]setpts=PTS-STARTPTS[fg]; [bg][fg]overlay=w" $output
+
+
+
