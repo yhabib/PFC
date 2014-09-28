@@ -6,7 +6,7 @@
 1280
 10
 18
-medium
+ultrafast
 00:01:00
 30
 

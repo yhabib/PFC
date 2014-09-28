@@ -49,9 +49,11 @@ list=$folder/mylist"-"`date +%H:%M`.txt
 echo "Comenzando grabación ..."
 echo -e "\aPuedes minimizar esta ventana, pues la grabación comenzará en 4 segundos..."
 sleep 4
-for (( i=0; i<15; i+=1)); do	
+
+cd $RUTAFFMPEG
+for (( i=0; i<10; i+=1)); do	
 	file=$folder/`date +%H:%M:%S:%4N`.mp4
-	cd $RUTAFFMPEG && ./ffmpeg -t $RECORDTIME -f x11grab -video_size $RES -framerate $FPS -i :0.0+$POS -vcodec libx264 -preset $PRESET -crf $CRF -y $file && printf "file '"$file"'\n" >> $list
+	./ffmpeg -t $RECORDTIME -f x11grab -video_size $RES -framerate $FPS -i :0.0+$POS -vcodec libx264 -preset $PRESET -crf $CRF -y $file && printf "file '"$file"'\n" >> $list
 done
 echo "Se va a proceder a generar el archivo concatenado de las 15 instancias de audio" && sleep 5
 bash $CURRENTDIR/concat.sh $list $folder.mp4

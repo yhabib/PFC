@@ -48,6 +48,6 @@ output=$folder/Overlay.mp4
 cd ~/bin && ./ffmpeg -i $video1 -i $audio -c:v copy -c:a aac -strict experimental $video
 
 #Genero archivo overlay con pantalla1, pantalla2, y audio
-#cd ~/bin && ./ffmpeg -i $video1 -i $video2 -i $audio  -filter_complex "[0:v]setpts=PTS-STARTPTS, pad=iw*2:ih[bg]; \
-#[1:v]setpts=PTS-STARTPTS[fg]; [bg][fg]overlay=w" $output
+cd ~/bin && ./ffmpeg -i $video1 -i $video2 -i $audio  -filter_complex "[0:v]setpts=PTS-STARTPTS, pad=iw*2:ih[bg]; \
+[1:v]setpts=PTS-STARTPTS[fg]; [bg][fg]overlay=w" $output
 

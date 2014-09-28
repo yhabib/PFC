@@ -52,8 +52,8 @@ while true; do
 	read -p "Enter your choice [1-3] " opcion
 
 case $opcion in
-	1) bash record.sh;;
-	2) bash loadConfig.sh;;
+	1) bash saveSession.sh;;
+	2) bash record.sh;;
 	3) exit -1;;
 *)	 
 	tput clear

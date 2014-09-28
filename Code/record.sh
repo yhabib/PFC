@@ -104,8 +104,8 @@ loadFile $FILE
 showConfig																																																																																																																																																															
 confirmacion
 gotDirectorio $RUTAVIDEOS
-waitingTime=900
-contador=$((PLAYTIME/15))
+waitingTime=600
+contador=$((PLAYTIME/10))
 
 while [ $contador>0 ]; do
 	dateDMY=$(date +%d%b%Y)
