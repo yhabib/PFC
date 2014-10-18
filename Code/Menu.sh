@@ -35,7 +35,7 @@ while true; do
 	echo "2. Generación de arhivos reproducibles"
 
 	tput cup 9 15
-	echo "3. Lanzar VLC para reproducción de estación"
+	echo "3. Reproducción de la estación"
 	 
 	tput cup 10 15
 	echo "4. Información"

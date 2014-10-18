@@ -30,7 +30,6 @@ declare PLAYTIME
 declare POS1
 declare POS2
 declare waitingTime
-#declare CURRENTDIR=`pwd`
 #------------------------------------------------------------------------------------------------------------------------------------
 
 #Funciones
