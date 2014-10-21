@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="8cm" height="22cm" viewBox="176 49 158 424" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffffff" cx="255.433" cy="79.9664" rx="65.7005" ry="29.0173"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="255.433" cy="79.9664" rx="65.7005" ry="29.0173"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="255.433" y="84.7664">
+      <tspan x="255.433" y="84.7664">fileGeneration.sh</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="198.539" y="145.841" width="114.4" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="198.539" y="145.841" width="114.4" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="255.739" y="169.641">
+      <tspan x="255.739" y="169.641">Dia? &amp;&amp; Sesion?</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="177.023" y="214" width="155.75" height="43"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="177.023" y="214" width="155.75" height="43"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="254.898" y="240.3">
+      <tspan x="254.898" y="240.3">Redirección \Dia\Sesion</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="255.387" cy="308.466" rx="50.4179" ry="21.4479"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="255.387" cy="308.466" rx="50.4179" ry="21.4479"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="255.387" y="313.266">
+      <tspan x="255.387" y="313.266">concat.sh</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="255.095" cy="379.892" rx="50.6852" ry="22.8792"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="255.095" cy="379.892" rx="50.6852" ry="22.8792"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="255.095" y="384.692">
+      <tspan x="255.095" y="384.692">overlay.sh</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="224.489" y="434.045" width="61" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="224.489" y="434.045" width="61" height="38"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="254.989" y="457.845">
+      <tspan x="254.989" y="457.845">End</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="255.433" y1="108.984" x2="255.658" y2="136.105"/>
+    <polygon style="fill: #000000" points="255.72,143.605 250.637,133.647 255.658,136.105 260.637,133.564 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="255.72,143.605 250.637,133.647 255.658,136.105 260.637,133.564 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="255.739" y1="183.841" x2="255.169" y2="204.268"/>
+    <polygon style="fill: #000000" points="254.96,211.765 250.241,201.629 255.169,204.268 260.237,201.908 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="254.96,211.765 250.241,201.629 255.169,204.268 260.237,201.908 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="254.898" y1="257" x2="255.229" y2="277.284"/>
+    <polygon style="fill: #000000" points="255.351,284.783 250.188,274.865 255.229,277.284 260.187,274.702 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="255.351,284.783 250.188,274.865 255.229,277.284 260.187,274.702 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="255.387" y1="329.914" x2="255.2" y2="347.277"/>
+    <polygon style="fill: #000000" points="255.119,354.777 250.227,344.724 255.2,347.277 260.227,344.832 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="255.119,354.777 250.227,344.724 255.2,347.277 260.227,344.832 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="255.095" y1="402.771" x2="255.022" y2="424.309"/>
+    <polygon style="fill: #000000" points="254.996,431.809 250.03,421.792 255.022,424.309 260.03,421.826 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="254.996,431.809 250.03,421.792 255.022,424.309 260.03,421.826 "/>
+  </g>
+</svg>
