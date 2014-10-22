@@ -6,24 +6,23 @@
 
 #-----------------------------------------------------------------------------------------------------------------------------#
 #Uso de TPUT para la interfaz. 
-#Podria utilizar "killall" con quit para matar todos los procesos salida brusca del sistema, sería sobre ffmpeg. Sacando PID  #																					  #
 #-----------------------------------------------------------------------------------------------------------------------------#
 
 
 while true; do
-	# clear the screen
+	# Limpieamos las X
 	tput clear
 	 
-	# Move cursor to screen location X,Y (top left is 0,0)
+	# Movemos el cursor a la localización X,Y (la esquina izquierda es 0,0)
 	tput cup 3 15
 	 
-	# Set a foreground colour using ANSI escape
+	# Configuramos el color del fondo a traves del condigo de escape ANSI
 	tput setaf 3
 	echo "Indra SoftLabs"
 	tput sgr0
 	 
 	tput cup 5 17
-	# Set reverse video mode
+	# Seleccionamos el modo de video "revertido"
 	tput rev
 	echo "M E N U -  P R I N C I P A L"
 	tput sgr0
@@ -36,16 +35,19 @@ while true; do
 
 	tput cup 9 15
 	echo "3. Reproducción de la estación"
-	 
+
 	tput cup 10 15
-	echo "4. Información"
+	echo "4. Instalación software"
 	 
 	tput cup 11 15
-	echo "5. Salir"
+	echo "5. Información"
 	 
-	# Set bold mode 
+	tput cup 12 15
+	echo "6. Salir"
+	 
+	# Seleccionamos modo "negrita"
 	tput bold
-	tput cup 13 15
+	tput cup 14 15
 	read -p "Enter your choice [1-4] " opcion
 
 case $opcion in
@@ -53,7 +55,8 @@ case $opcion in
 	2) bash generacionArchivos.sh;;
 	3) vlc;;
 	4) uname -r;;
-	5) echo "Adiós";
+	5) uname -r;;
+	6) echo "Adiós";
 	   exit 1;;
 *)	 
 	tput clear

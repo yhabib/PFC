@@ -48,6 +48,6 @@ for (( i=0; i<10; i+=1)); do
 done
 echo "Se va a proceder a generar el archivo concatenado de las 15 instancias de audio" && sleep 5
 bash $CURRENTDIR/concat.sh $list $folder.mp3
-echo "Se va a proceder a generar un archivo conjunto de las tres sesiones" 
-sleep 10
+#echo "Se va a proceder a generar un archivo conjunto de las tres sesiones" 
+#sleep 10
 #bash $CURRENTDIR/overlay.sh $RUTAVIDEOS
