@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="9cm" height="20cm" viewBox="52 -69 169 399" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="100.076" y="31.3" width="114.35" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="100.076" y="31.3" width="114.35" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="157.251" y="55.1">
+      <tspan x="157.251" y="55.1">ffmpeg &amp;&amp; N++</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="157.068,107.393 209.865,140.311 157.068,173.23 104.271,140.311 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="157.068,107.393 209.865,140.311 157.068,173.23 104.271,140.311 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="157.068" y="145.111">
+      <tspan x="157.068" y="145.111">N&lt;10?</tspan>
+    </text>
+  </g>
+  <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="104.271,140.311 53.74,140.282 "/>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="53.74,140.532 53.5,140.532 53.5,50.3 90.3403,50.3 "/>
+    <polygon style="fill: #000000" points="97.8403,50.3 87.8403,55.3 90.3403,50.3 87.8403,45.3 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="97.8403,50.3 87.8403,55.3 90.3403,50.3 87.8403,45.3 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="157.251" y1="69.3" x2="157.115" y2="97.6566"/>
+    <polygon style="fill: #000000" points="157.078,105.157 152.127,95.1325 157.115,97.6566 162.127,95.1808 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="157.078,105.157 152.127,95.1325 157.115,97.6566 162.127,95.1808 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="157.068" y1="173.23" x2="157.126" y2="201.934"/>
+    <polygon style="fill: #000000" points="157.141,209.434 152.121,199.444 157.126,201.934 162.12,199.424 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="157.141,209.434 152.121,199.444 157.126,201.934 162.12,199.424 "/>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="157.145" cy="233.656" rx="49.3391" ry="21.9865"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="157.145" cy="233.656" rx="49.3391" ry="21.9865"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="157.145" y="238.456">
+      <tspan x="157.145" y="238.456">concat.sh</tspan>
+    </text>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="82.5984" y="133.314">
+    <tspan x="82.5984" y="133.314">No</tspan>
+  </text>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="160.147" y="189.642">
+    <tspan x="160.147" y="189.642">Si</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="135.106" y="290.722" width="43.45" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="135.106" y="290.722" width="43.45" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="156.831" y="314.522">
+      <tspan x="156.831" y="314.522">End</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="157.145" y1="255.644" x2="156.918" y2="280.986"/>
+    <polygon style="fill: #000000" points="156.851,288.486 151.941,278.442 156.918,280.986 161.941,278.531 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="156.851,288.486 151.941,278.442 156.918,280.986 161.941,278.531 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="157.716" y1="-10.8007" x2="157.359" y2="21.5645"/>
+    <polygon style="fill: #000000" points="157.276,29.0641 152.387,19.0095 157.359,21.5645 162.386,19.1199 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="157.276,29.0641 152.387,19.0095 157.359,21.5645 162.386,19.1199 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="157.352" y="-25.6524">
+    <tspan x="157.352" y="-25.6524"></tspan>
+  </text>
+  <g>
+    <ellipse style="fill: #ffffff" cx="158.036" cy="-39.7525" rx="61.6614" ry="27.9541"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="158.036" cy="-39.7525" rx="61.6614" ry="27.9541"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="158.036" y="-34.9525">
+      <tspan x="158.036" y="-34.9525">audioRecord.sh</tspan>
+    </text>
+  </g>
+</svg>

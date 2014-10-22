@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="7cm" height="14cm" viewBox="151 -136 129 264" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <ellipse style="fill: #ffffff" cx="216.104" cy="-106.739" rx="63.1648" ry="27.6959"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="216.104" cy="-106.739" rx="63.1648" ry="27.6959"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="216.104" y="-101.939">
+      <tspan x="216.104" y="-101.939">fromInternet.sh</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="152.975" y="-31.5" width="125.3" height="70"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="152.975" y="-31.5" width="125.3" height="70"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="215.625" y="-7.7">
+      <tspan x="215.625" y="-7.7">Descarga de todo </tspan>
+      <tspan x="215.625" y="8.3">el software </tspan>
+      <tspan x="215.625" y="24.3">necesario</tspan>
+    </text>
+  </g>
+  <g>
+    <ellipse style="fill: #ffffff" cx="214.933" cy="105.466" rx="60.1188" ry="21.6746"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="214.933" cy="105.466" rx="60.1188" ry="21.6746"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="214.933" y="110.266">
+      <tspan x="214.933" y="110.266">fromPath.sh</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="216.104" y1="-79.0435" x2="215.723" y2="-41.2356"/>
+    <polygon style="fill: #000000" points="215.648,-33.736 210.748,-43.7858 215.723,-41.2356 220.748,-43.6851 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="215.648,-33.736 210.748,-43.7858 215.723,-41.2356 220.748,-43.6851 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="215.625" y1="38.5" x2="215.082" y2="74.0568"/>
+    <polygon style="fill: #000000" points="214.967,81.5559 210.12,71.4807 215.082,74.0568 220.119,71.6335 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="214.967,81.5559 210.12,71.4807 215.082,74.0568 220.119,71.6335 "/>
+  </g>
+</svg>

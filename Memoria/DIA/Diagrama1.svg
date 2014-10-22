@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="23cm" height="11cm" viewBox="107 95 443 217" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="108.6" y="96.5" width="85.5" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="108.6" y="96.5" width="85.5" height="54"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="151.35" y="120.3">
+      <tspan x="151.35" y="120.3">Archivo de </tspan>
+      <tspan x="151.35" y="136.3">entrada</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="300.724" y="96.9" width="119.05" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="300.724" y="96.9" width="119.05" height="54"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="360.249" y="120.7">
+      <tspan x="360.249" y="120.7">Paquetes de </tspan>
+      <tspan x="360.249" y="136.7">datos codificados</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="194.1" y1="123.5" x2="290.988" y2="123.863"/>
+    <polygon style="fill: #000000" points="298.488,123.892 288.469,128.854 290.988,123.863 288.507,118.854 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="298.488,123.892 288.469,128.854 290.988,123.863 288.507,118.854 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="211" y="114">
+    <tspan x="211" y="114">Demultiplexor</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="451" y="177" width="97.9" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="451" y="177" width="97.9" height="54"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="499.95" y="200.8">
+      <tspan x="499.95" y="200.8">Tramas</tspan>
+      <tspan x="499.95" y="216.8">decodificadas</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="419.774,123.9 499.95,123.9 499.95,167.264 "/>
+    <polygon style="fill: #000000" points="499.95,174.764 494.95,164.764 499.95,167.264 504.95,164.764 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="499.95,174.764 494.95,164.764 499.95,167.264 504.95,164.764 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="425" y="116">
+    <tspan x="425" y="116">Decodificador</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="302" y="257" width="119.05" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="302" y="257" width="119.05" height="54"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="361.525" y="280.8">
+      <tspan x="361.525" y="280.8">Paquetes de</tspan>
+      <tspan x="361.525" y="296.8">datos codificados</tspan>
+    </text>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="499.95,231 499.95,284 430.786,284 "/>
+    <polygon style="fill: #000000" points="423.286,284 433.286,279 430.786,284 433.286,289 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="423.286,284 433.286,279 430.786,284 433.286,289 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="435" y="275">
+    <tspan x="435" y="275">Codificador</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="116" y="257.5" width="81.5" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="116" y="257.5" width="81.5" height="54"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="156.75" y="281.3">
+      <tspan x="156.75" y="281.3">Archivo de</tspan>
+      <tspan x="156.75" y="297.3">salida</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="302" y1="284" x2="207.236" y2="284.453"/>
+    <polygon style="fill: #000000" points="199.736,284.489 209.712,279.442 207.236,284.453 209.76,289.441 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="199.736,284.489 209.712,279.442 207.236,284.453 209.76,289.441 "/>
+  </g>
+  <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="222" y="270">
+    <tspan x="222" y="270">Multiplexor</tspan>
+  </text>
+</svg>
