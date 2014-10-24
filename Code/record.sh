@@ -1,12 +1,12 @@
 #!/bin/bash
 
 #*****************************************************************************************************************************#
-#									Record: Script para la configuración de la sesión 										  #	
+#														Record.SH										  #	
 #*****************************************************************************************************************************#
 
 #-----------------------------------------------------------------------------------------------------------------------------#
 #La interfaz recopila la información necesaria para la sesión de grabación, esto es: el nº de pantallas, la inclusión o no del #
-#audio, el tiempo de grabación,...										    #
+#audio, el tiempo de grabación,...										    
 #Se creará una carpeta para la sesion total, luego otra para cada dia de grabación y un más puqueña en función del tamaño	  #
 #final de los archivos																										  #
 #El bucle para obtener los datos de los monitores, en caso de que se seleccione mas de uno , ga ha de identicar la posición   #
@@ -33,12 +33,16 @@ declare waitingTime
 #------------------------------------------------------------------------------------------------------------------------------------
 
 #Funciones
+
+#Lanza las 3 instancias necesarias de FFmpeg
 lanzarFFmpeg()
 {
 	gnome-terminal --tab -e "bash videoRecord.sh $RUTAFFMPEG $RUTAVIDEOS/$dateDMY/$dateHM $RES1 $FPS $CRF $PRESET $RECORDTIME $POS1 1" && gnome-terminal --tab -e "bash videoRecord.sh $RUTAFFMPEG $RUTAVIDEOS/$dateDMY/$dateHM $RES2  $FPS $CRF $PRESET $RECORDTIME $POS2 2"
 	gnome-terminal --tab -e "bash audioRecord.sh $RUTAFFMPEG $RUTAVIDEOS/$dateDMY/$dateHM $RECORDTIME"
 }
 
+#Carga los parámetros de configuración de una sesión almacenados en un .txt
+#Lee este recursivamente y otorga su valor a la variable 
 loadFile()
 {
 	i=0
@@ -55,6 +59,7 @@ loadFile()
     cd ..
 }
 
+#Muestra la configuración actual para la sesión de grabación
 showConfig()
 {
 	echo "----------------------------------------------------------------------------"
@@ -70,9 +75,9 @@ showConfig()
 	echo "	Duración de las sesiones de video: $PLAYTIME minutos"
 	echo "	Posiciones de los monitores: Principal: $POS1  Secundaria: $POS2"
 	echo "----------------------------------------------------------------------------"
-
 }
 
+#Método para la confiramación de que todos los valores son correctos
 confirmacion()
 {
 	while true;  do
@@ -85,6 +90,7 @@ confirmacion()
 	done	
 }
 
+#En caso de que exista la carpeta directamente entra en ella, en otro caso la crea y luego entra
 gotDirectorio()
 {
 	if [ ! -d $1 ]; then 

@@ -1,28 +1,29 @@
 #!/bin/bash
 
-#*****************************************************************************************************************************#
-#									AudioRecord: Script para la grabación de audio										  #	
-#*****************************************************************************************************************************#
+#*****************************************************************************************************************************
+#										AudioRecord.ah								 
+#*****************************************************************************************************************************
 
-#-----------------------------------------------------------------------------------------------------------------------------#
-#Se obtienen los parámetros relevantes para la grabacion de una instancia de video. Estos son: la resolucion de la pantalla,  #
-#la posición de esta, los frames por segundo*, el nombre de la grabación, el tiempo de grabación* y el número de pantalla.    #
-#El nombre de cada archivo se formará con el nombre de la sesión*, el numero de la pantalla y la hora con preciosion de ms.   #
-#Los parámetros con *, son iguales a todas las instancias.	
-#Ejecutar el script con un bucle while, hasta que se cancele los procesos con CTRL+C																  #
-#-----------------------------------------------------------------------------------------------------------------------------#
+#-----------------------------------------------------------------------------------------------------------------------------
+#Script encargado de la grabación del audio generado por el micro.
+#Se le pasan los parámetros necesarios:
+#la ruta a las librerías y dependencias de FFMpeg,
+#la ruta a donde se va a almacenar las grabaciones, y la duración de estas.
+#-----------------------------------------------------------------------------------------------------------------------------
+
 clear
 
 #Variables
-
 declare RUTAFFMPEG=$1
 declare RUTAVIDEOS=$2
 declare RECORDTIME=$3
 declare NAME="Audio"
 declare CURRENTDIR=`pwd`
-#------------------------------------------------------------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------------------------------------------------------
 
 #Funciones
+
+#En caso de que exista la carpeta directamente entra en ella, en otro caso la crea y luego entra
 gotDirectorio()
 {
 	if [ ! -d $1 ]; then 
@@ -32,7 +33,6 @@ gotDirectorio()
 #------------------------------------------------------------------------------------------------------------------------_
 
 #Code
-
 folder=$RUTAVIDEOS/$NAME
 gotDirectorio $folder
 list=$folder/mylist"-"`date +%H:%M`.txt

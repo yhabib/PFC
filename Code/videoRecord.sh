@@ -1,21 +1,18 @@
 #!/bin/bash
 
-#*****************************************************************************************************************************#
-#									VideoRecord: Script para la grabación de video  										  #	
-#*****************************************************************************************************************************#
+#**************************************************************************************************************************
+#											VideoRecord.sh 										
+#**************************************************************************************************************************
 
-#-----------------------------------------------------------------------------------------------------------------------------#
-#Se obtienen los parámetros relevantes para la grabacion de una instancia de video. Estos son: la resolucion de la pantalla,  #
-#la posición de esta, los frames por segundo*, el nombre de la grabación, el tiempo de grabación* y el número de pantalla.    #
-#El nombre de cada archivo se formará con el nombre de la sesión*, el numero de la pantalla y la hora con preciosion de ms.   #
-#Los parámetros con *, son iguales a todas las instancias.	
-#Ejecutar el script con un bucle while, hasta que se cancele los procesos con CTRL+C		
+#--------------------------------------------------------------------------------------------------------------------------
+#Script encargado de la grabación del video generado por una pantalla.
+#Se le pasan los siguientes parámetros necesarios:
+#la ruta a las librerías y dependencias de FFMpeg,
+#la ruta a donde se va a almacenar las grabaciones,
+#resolución del monitor, CRF, preset, tiempo de grabación,
+#posición del monitor (respecto al principal), le numero de pantalla.									  
+#---------------------------------------------------------------------------------------------------------------------------
 
-#Para la grabcion del segundo, tercer,...monitor. Necesito saber su posicion relativa respecto al principal, y a partir de ahi
-# le sumo o le resto a -i :0.0 +X.0, la posicion en X donde quiero que grabe luego esto le suma la resolución.		
-#If greater than, me permitirá saber si hay mas de un monitor en ese caso hay que desplazar la grabacion.
-#Me crea una carpeta con un contador y hora y minutos, guarda la instancia de grabacion y vuelve a la carpeta record.											  
-#-----------------------------------------------------------------------------------------------------------------------------#
 clear
 
 #Varibales
@@ -33,6 +30,8 @@ declare CURRENTDIR=`pwd`
 #------------------------------------------------------------------------------------------------------------------------------------
 
 #Funciones
+
+#En caso de que exista la carpeta directamente entra en ella, en otro caso la crea y luego entra
 gotDirectorio()
 {
 	if [ ! -d $1 ]; then 

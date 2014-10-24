@@ -1,8 +1,8 @@
-R#!/bin/bash
+#!/bin/bash
 
-#*****************************************************************************************************************************#
-#									saveSession: Script para la configuración de la sesión 										  #	
-#*****************************************************************************************************************************#
+#***************************************************************************************************************************
+#											saveSession.sh								
+#***************************************************************************************************************************
 
 #-----------------------------------------------------------------------------------------------------------------------------#
 #La interfaz recopila la informaciń necesaria para la sesión de grabación, esto es: el nº de pantallas, la inclusión o no del #
@@ -31,6 +31,8 @@ declare CURRENTDIR=`pwd`
 #------------------------------------------------------------------------------------------------------------------------------------
 
 #Funciones
+
+#En caso de que exista la carpeta directamente entra en ella, en otro caso la crea y luego entra
 gotDirectorio()
 {
 	if [ ! -d $1 ]; then 
@@ -39,6 +41,7 @@ gotDirectorio()
 	cd $1	
 }
 
+#Método para la confiramación de que todos los valores son correctos
 confirmacion()
 {
 	while true;  do
@@ -50,9 +53,8 @@ confirmacion()
 		esac
 	done	
 }
-#Método para poder grabar la sesion en unarchivo de configuracion para posteriores usos.
-#grabarConf()
 
+#Muestra la configuración actual para la sesión de grabación
 showConfig()
 {
 	echo "----------------------------------------------------------------------------"
@@ -69,6 +71,7 @@ showConfig()
 	echo "----------------------------------------------------------------------------"
 }
 
+#Se encarga de grabar en un archivo .txt las opciones de configuración, cada una en una linea nueva.
 grabacion()
 {
 	echo $RUTAFFMPEG > $SESSION
@@ -83,6 +86,7 @@ grabacion()
 }
 #-----------------------------------------------------------------------------------
 
+#Code
 echo "Script basado en FFMPEG para la configuración de una nueva sesión de video."
 echo "Asistente par la creación de una sesión de grabación"
 echo
