@@ -26,7 +26,7 @@ declare POS1
 declare POS2
 declare FPS
 declare RECORDTIME
-declare PLAYTIME
+declare SESSIONTIME
 declare CURRENTDIR=`pwd`
 #------------------------------------------------------------------------------------------------------------------------------------
 
@@ -66,7 +66,7 @@ showConfig()
 	echo "  	Resolución pantalla secundaria: $RES2"
 	echo "	Tasa de refresco: $FPS fps"
 	echo "	Duracion de la grabacion: $RECORDTIME "
-	echo "	Duración de las sesiones de video: $PLAYTIME minutos"
+	echo "	Duración de las sesiones de video: $SESSIONTIME minutos"
 	echo "	Posiciones de los monitores: Principal: $POS1  Secundaria: $POS2"
 	echo "----------------------------------------------------------------------------"
 }
@@ -82,7 +82,7 @@ grabacion()
 	echo $POS2 >> $SESSION
 	echo $FPS >> $SESSION
 	echo $RECORDTIME >> $SESSION
-	echo $PLAYTIME>> $SESSION
+	echo $SESSIONTIME>> $SESSION
 }
 #-----------------------------------------------------------------------------------
 
@@ -101,7 +101,7 @@ read -p "Resolución pantalla principal: " RES1
 read -p "Resolución pantalla secundaria: " RES2
 read -p "	-¿Frecuencia de refresco?(10fps es lo óptimo): " FPS
 read -p "	-Duración de la sesión de grabación(hh:mm:ss): " RECORDTIME
-read -p "	-Duración de los videos generados (minutos): " PLAYTIME
+read -p "	-Duración de los videos generados (minutos): " SESSIONTIME
 
 POS1=0
 OIFS=$IFS && IFS='x' read -a array <<< "$RES1" && POS2=${array[0]} && IFS=$OIFS

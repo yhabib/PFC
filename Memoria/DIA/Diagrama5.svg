@@ -1,71 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="8cm" height="22cm" viewBox="176 49 158 424" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="10cm" height="23cm" viewBox="156 29 197 457" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g>
-    <ellipse style="fill: #ffffff" cx="255.433" cy="79.9663" rx="65.7005" ry="29.0173"/>
-    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="255.433" cy="79.9663" rx="65.7005" ry="29.0173"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="255.433" y="84.7663">
-      <tspan x="255.433" y="84.7663">fileGeneration.sh</tspan>
+    <ellipse style="fill: #ffffff" cx="255.433" cy="59.9664" rx="65.7005" ry="29.0173"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="255.433" cy="59.9664" rx="65.7005" ry="29.0173"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="255.433" y="64.7664">
+      <tspan x="255.433" y="64.7664">fileGeneration.sh</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="198.539" y="145.841" width="114.4" height="38"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="198.539" y="145.841" width="114.4" height="38"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="255.739" y="169.641">
-      <tspan x="255.739" y="169.641">Dia? &amp;&amp; Sesion?</tspan>
+    <rect style="fill: #ffffff" x="186.214" y="125.341" width="136.05" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="186.214" y="125.341" width="136.05" height="54"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="254.239" y="149.141">
+      <tspan x="254.239" y="149.141">Selección de sesión:</tspan>
+      <tspan x="254.239" y="165.141">Día y Hora</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="177.023" y="214" width="155.75" height="43"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="177.023" y="214" width="155.75" height="43"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="254.898" y="240.3">
-      <tspan x="254.898" y="240.3">Redirección \Dia\Sesion</tspan>
+    <rect style="fill: #ffffff" x="157.498" y="208.5" width="194.8" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="157.498" y="208.5" width="194.8" height="54"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="254.898" y="232.3">
+      <tspan x="254.898" y="232.3">Se establece el path</tspan>
+      <tspan x="254.898" y="248.3"> \Dia\Hora</tspan>
     </text>
   </g>
   <g>
-    <ellipse style="fill: #ffffff" cx="255.388" cy="308.466" rx="50.4179" ry="21.4479"/>
-    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="255.388" cy="308.466" rx="50.4179" ry="21.4479"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="255.388" y="313.266">
-      <tspan x="255.388" y="313.266">concat.sh</tspan>
+    <ellipse style="fill: #ffffff" cx="255.388" cy="313.466" rx="50.4179" ry="21.4479"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="255.388" cy="313.466" rx="50.4179" ry="21.4479"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="255.388" y="318.266">
+      <tspan x="255.388" y="318.266">concat.sh</tspan>
     </text>
   </g>
   <g>
-    <ellipse style="fill: #ffffff" cx="255.095" cy="379.891" rx="50.6852" ry="22.8792"/>
-    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="255.095" cy="379.891" rx="50.6852" ry="22.8792"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="255.095" y="384.691">
-      <tspan x="255.095" y="384.691">overlay.sh</tspan>
+    <ellipse style="fill: #ffffff" cx="255.095" cy="388.891" rx="50.6852" ry="22.8792"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="255.095" cy="388.891" rx="50.6852" ry="22.8792"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="255.095" y="393.691">
+      <tspan x="255.095" y="393.691">overlay.sh</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="224.488" y="434.046" width="61" height="38"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="224.488" y="434.046" width="61" height="38"/>
-    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="254.988" y="457.846">
-      <tspan x="254.988" y="457.846">End</tspan>
+    <rect style="fill: #ffffff" x="224.488" y="447.046" width="61" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="224.488" y="447.046" width="61" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="254.988" y="470.846">
+      <tspan x="254.988" y="470.846">End</tspan>
     </text>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="255.432" y1="108.984" x2="255.657" y2="136.105"/>
-    <polygon style="fill: #000000" points="255.719,143.605 250.637,133.647 255.657,136.105 260.636,133.564 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="255.719,143.605 250.637,133.647 255.657,136.105 260.636,133.564 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="255.433" y1="88.9837" x2="254.558" y2="115.61"/>
+    <polygon style="fill: #000000" points="254.312,123.106 249.643,112.947 254.558,115.61 259.638,113.275 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="254.312,123.106 249.643,112.947 254.558,115.61 259.638,113.275 "/>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="255.738" y1="183.841" x2="255.169" y2="204.268"/>
-    <polygon style="fill: #000000" points="254.96,211.765 250.241,201.629 255.169,204.268 260.237,201.908 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="254.96,211.765 250.241,201.629 255.169,204.268 260.237,201.908 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="254.239" y1="179.341" x2="254.678" y2="198.766"/>
+    <polygon style="fill: #000000" points="254.847,206.265 249.623,196.38 254.678,198.766 259.62,196.154 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="254.847,206.265 249.623,196.38 254.678,198.766 259.62,196.154 "/>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="254.898" y1="257" x2="255.229" y2="277.283"/>
-    <polygon style="fill: #000000" points="255.352,284.782 250.189,274.865 255.229,277.283 260.188,274.702 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="255.352,284.782 250.189,274.865 255.229,277.283 260.188,274.702 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="254.898" y1="262.5" x2="255.226" y2="282.283"/>
+    <polygon style="fill: #000000" points="255.351,289.782 250.185,279.867 255.226,282.283 260.184,279.701 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="255.351,289.782 250.185,279.867 255.226,282.283 260.184,279.701 "/>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="255.388" y1="329.914" x2="255.2" y2="347.277"/>
-    <polygon style="fill: #000000" points="255.118,354.776 250.227,344.722 255.2,347.277 260.226,344.831 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="255.118,354.776 250.227,344.722 255.2,347.277 260.226,344.831 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="255.388" y1="334.914" x2="255.187" y2="356.276"/>
+    <polygon style="fill: #000000" points="255.116,363.776 250.211,353.729 255.187,356.276 260.21,353.824 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="255.116,363.776 250.211,353.729 255.187,356.276 260.21,353.824 "/>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="255.094" y1="402.772" x2="255.021" y2="424.31"/>
-    <polygon style="fill: #000000" points="254.996,431.81 250.03,421.793 255.021,424.31 260.029,421.827 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="254.996,431.81 250.03,421.793 255.021,424.31 260.029,421.827 "/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="255.095" y1="411.77" x2="255.018" y2="437.31"/>
+    <polygon style="fill: #000000" points="254.995,444.81 250.025,434.795 255.018,437.31 260.025,434.825 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="254.995,444.81 250.025,434.795 255.018,437.31 260.025,434.825 "/>
   </g>
+  <text font-size="12.7998" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="254.898" y="235.5">
+    <tspan x="254.898" y="235.5"></tspan>
+  </text>
 </svg>

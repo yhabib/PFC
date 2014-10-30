@@ -1,36 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
-<svg width="7cm" height="11cm" viewBox="196 81 135 218" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="7cm" height="16cm" viewBox="196 81 135 318" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g>
     <ellipse style="fill: #ffffff" cx="263.034" cy="104.229" rx="63.9034" ry="22.0777"/>
     <ellipse style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" cx="263.034" cy="104.229" rx="63.9034" ry="22.0777"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="263.034" y="109.029">
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="263.034" y="109.029">
       <tspan x="263.034" y="109.029">launchVLC.sh</tspan>
     </text>
   </g>
   <g>
     <rect style="fill: #ffffff" x="197.3" y="166" width="132.45" height="54"/>
     <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="197.3" y="166" width="132.45" height="54"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="263.525" y="189.8">
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="263.525" y="189.8">
       <tspan x="263.525" y="189.8">Se genera instancia</tspan>
       <tspan x="263.525" y="205.8">de VLC</tspan>
     </text>
   </g>
   <g>
-    <rect style="fill: #ffffff" x="243" y="260" width="42.8" height="38"/>
-    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="243" y="260" width="42.8" height="38"/>
-    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="264.4" y="283.8">
-      <tspan x="264.4" y="283.8">Exit</tspan>
+    <rect style="fill: #ffffff" x="239.886" y="359.625" width="42.8" height="38"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="239.886" y="359.625" width="42.8" height="38"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="261.286" y="383.425">
+      <tspan x="261.286" y="383.425">Exit</tspan>
     </text>
   </g>
   <g>
     <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="263.034" y1="126.307" x2="263.405" y2="156.265"/>
-    <polygon style="fill: #000000" points="263.497,163.764 258.374,153.827 263.405,156.265 268.373,153.703 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="263.497,163.764 258.374,153.827 263.405,156.265 268.373,153.703 "/>
+    <polygon style="fill: #000000" points="263.498,163.764 258.375,153.827 263.405,156.265 268.374,153.703 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="263.498,163.764 258.375,153.827 263.405,156.265 268.374,153.703 "/>
   </g>
   <g>
-    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="263.525" y1="220" x2="264.187" y2="250.266"/>
-    <polygon style="fill: #000000" points="264.351,257.764 259.134,247.876 264.187,250.266 269.131,247.658 "/>
-    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="264.351,257.764 259.134,247.876 264.187,250.266 269.131,247.658 "/>
+    <rect style="fill: #ffffff" x="206.466" y="266.648" width="113" height="54"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="206.466" y="266.648" width="113" height="54"/>
+    <text font-size="12.7998" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="262.966" y="290.448">
+      <tspan x="262.966" y="290.448">Se configura la </tspan>
+      <tspan x="262.966" y="306.448">reproducción</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="263.525" y1="220" x2="263.083" y2="256.912"/>
+    <polygon style="fill: #000000" points="262.993,264.412 258.113,254.353 263.083,256.912 268.112,254.473 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="262.993,264.412 258.113,254.353 263.083,256.912 268.112,254.473 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="262.413" y1="321.635" x2="261.874" y2="348.886"/>
+    <polygon style="fill: #000000" points="261.726,356.385 256.924,346.288 261.874,348.886 266.922,346.485 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="261.726,356.385 256.924,346.288 261.874,348.886 266.922,346.485 "/>
   </g>
 </svg>

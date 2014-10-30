@@ -26,7 +26,7 @@ declare FPS
 declare CRF
 declare PRESET
 declare RECORDTIME
-declare PLAYTIME 
+declare SESSIONTIME 
 declare POS1
 declare POS2
 declare waitingTime
@@ -55,7 +55,7 @@ loadFile()
     POS1=${array[4]} && POS2=${array[5]}
     FPS=${array[6]} &&  CRF=${array[7]}
     PRESET=${array[8]} && RECORDTIME=${array[9]}
-    PLAYTIME=${array[10]}
+    SESSIONTIME=${array[10]}
     cd ..
 }
 
@@ -72,7 +72,7 @@ showConfig()
 	echo "	Seleccion el valor CRF: $CRF "
 	echo "	Seleccion el preset: $PRESET"
 	echo "	Duracion de las grabaciones: $RECORDTIME "
-	echo "	Duración de las sesiones de video: $PLAYTIME minutos"
+	echo "	Duración de las sesiones de video: $SESSIONTIME minutos"
 	echo "	Posiciones de los monitores: Principal: $POS1  Secundaria: $POS2"
 	echo "----------------------------------------------------------------------------"
 }
@@ -110,7 +110,7 @@ showConfig
 confirmacion
 gotDirectorio $RUTAVIDEOS
 waitingTime=600
-contador=$((PLAYTIME/10))
+contador=$((SESSIONTIME/10))
 
 while [ $contador>0 ]; do
 	dateDMY=$(date +%d%b%Y)
