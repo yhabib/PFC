@@ -1,4 +1,4 @@
-/home/yhabib/bin
+﻿/home/yhabib/bin
 /home/yhabib/Proyecto/Grabaciones
 1280x1024
 1366x768
@@ -10,4 +10,5 @@ ultrafast
 00:01:00
 30
 
-#Configuración para la generación de videos de máxima calidad con una compresión muy rápida.
+#Configuración para la generación de videos de máxima calidad con una compresión 
+muy rápida.
