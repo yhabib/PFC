@@ -23,13 +23,13 @@ declare folder
 #Code
 path=~/Proyecto/Grabaciones
 
-echo "Script basado ...."
+echo "Script basado en FFmpeg es el ess"
 cd $path
 echo "Dias disponibles" && ls
-read -p "Día?" dia
+read -p "Día? " dia
 cd $dia
 echo "Sesiones disponibles" && ls
-read -p "Sesión?" sesion
+read -p "Sesión? " sesion
 cd $sesion
 
 folder=$path/$dia/$sesion
