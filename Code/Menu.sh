@@ -48,7 +48,7 @@ while true; do
 	# Seleccionamos modo "negrita"
 	tput bold
 	tput cup 14 15
-	read -p "Enter your choice [1-4] " opcion
+	read -p "Enter your choice [1-6] " opcion
 
 case $opcion in
 	1) bash Menu2.sh;;

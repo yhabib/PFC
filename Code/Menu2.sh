@@ -30,10 +30,13 @@ while true; do
 	tput cup 7 15
 	echo "1. Grabación de la estación"
 
+	tput bold
 	tput cup 8 15
 	echo "	1 Crear nueva sesión de grabación"
+	tput bold
 	tput cup 9 15
 	echo "	2 Comenzar sesión de grabación" 
+	tput bold
 	tput cup 10 15
 	echo "	3 Volver a la anterior ventana" 
 	
@@ -54,7 +57,7 @@ while true; do
 	 
 	# Seleccionamos modo "negrita"
 	tput bold
-	tput cup 14 15
+	tput cup 17 15
 	read -p "Enter your choice [1-3] " opcion
 
 case $opcion in
