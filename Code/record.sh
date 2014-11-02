@@ -62,10 +62,13 @@ loadFile()
 #Muestra la configuración actual para la sesión de grabación
 showConfig()
 {
+	echo
+	tput sgr0
+	tput setaf 5
 	echo "----------------------------------------------------------------------------"
-	echo "La configuración escogida es:"
-	echo "Ruta a los archivos FFmpeg: $RUTAFFMPEG"
-	echo "Ruta al directorio de grabación deseado: $RUTAVIDEOS"
+	echo " La configuración escogida es:"
+	echo "	Ruta a los archivos FFmpeg: $RUTAFFMPEG"
+	echo "	Ruta al directorio de grabación deseado: $RUTAVIDEOS"
 	echo "	Resolución pantalla principal: $RES1"
 	echo "  	Resolución pantalla secundaria: $RES2"
 	echo "	Tasa de refresco: $FPS fps"
@@ -80,6 +83,8 @@ showConfig()
 #Método para la confiramación de que todos los valores son correctos
 confirmacion()
 {
+	tput sgr0
+	tput bold
 	while true;  do
 		echo;read -p "Está seguro de los valores introducidos o desea reiniciar el proceso? (s/n)" yn																																																															
 		case $yn in
@@ -99,11 +104,17 @@ gotDirectorio()
 }
 #------------------------------------------------------------------------------------------------------------------------_
 
-#Code																																																																													
-echo "Script basado en FFMPEG para la grabación de video y audio."
-echo "Asistente par la creación de una sesión de grabación"
-echo "Configuraciones disponibles" && cd Configuraciones && ls
-read -p "Que configuración quiere utilizar??" FILE
+#Code	
+tput sgr0
+tput cup 1 1																																																																												
+echo "Script basado en FFMPEG para la grabación de video y audio"
+
+tput cup 2 2
+echo "A continuación se muestran las configuracióne disponibles:" && cd Configuraciones
+tput cup 3 4
+ls
+tput cup 5 1
+read -p "¿Qué configuración desea utilizar? " FILE
 
 loadFile $FILE
 showConfig																																																																																																																																																															

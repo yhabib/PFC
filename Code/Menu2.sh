@@ -33,13 +33,12 @@ while true; do
 	tput bold
 	tput cup 8 15
 	echo "	1 Crear nueva sesión de grabación"
-	tput bold
 	tput cup 9 15
 	echo "	2 Comenzar sesión de grabación" 
-	tput bold
 	tput cup 10 15
 	echo "	3 Volver a la anterior ventana" 
 	
+	tput sgr0
 	tput cup 11 15
 	echo "2. Generación de arhivos reproducibles"
 	 

@@ -53,7 +53,7 @@ while true; do
 case $opcion in
 	1) bash Menu2.sh;;
 	2) bash generacionArchivos.sh;;
-	3) vlc;;
+	3) bash reproduccion.sh;;
 	4) uname -r;;
 	5) uname -r;;
 	6) echo "Adiós";

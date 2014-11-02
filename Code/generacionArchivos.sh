@@ -23,12 +23,22 @@ declare folder
 #Code
 path=~/Proyecto/Grabaciones
 
-echo "Script basado en FFmpeg es el ess"
+tput sgr0
+tput bold
+tput cup 1 1
+echo "Script basado en FFmpeg para la generación de los archivos finales"
 cd $path
-echo "Dias disponibles" && ls
+tput sgr0
+tput cup 3 2
+echo "Dias disponibles" 
+ls
+tput cup 6 2
 read -p "Día? " dia
 cd $dia
-echo "Sesiones disponibles" && ls
+tput cup 8 2
+echo "Sesiones disponibles" 
+ls
+tput cup 10 2
 read -p "Sesión? " sesion
 cd $sesion
 

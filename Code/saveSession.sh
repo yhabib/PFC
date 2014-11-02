@@ -44,6 +44,8 @@ gotDirectorio()
 #Método para la confiramación de que todos los valores son correctos
 confirmacion()
 {
+	tput sgr0
+	tput bold
 	while true;  do
 		echo;read -p "¿Está seguro de los valores introducidos o desea reiniciar el proceso? (s/n) " yn
 		case $yn in
@@ -57,13 +59,15 @@ confirmacion()
 #Muestra la configuración actual para la sesión de grabación
 showConfig()
 {
+	tput sgr0
+	tput setaf 5
 	echo "----------------------------------------------------------------------------"
-	echo "La configuración escogida es:"
-	echo "Nombre de la sesión:  $SESSION"
-	echo "Ruta a los archivos FFmpeg:  $RUTAFFMPEG"
-	echo "Ruta al directorio de grabación deseado:  $RUTAVIDEOS"
+	echo " La configuración escogida es:"
+	echo "	Nombre de la sesión:  $SESSION"
+	echo "	Ruta a los archivos FFmpeg:  $RUTAFFMPEG"
+	echo "	Ruta al directorio de grabación deseado:  $RUTAVIDEOS"
 	echo "	Resolución pantalla principal: $RES1"
-	echo "  	Resolución pantalla secundaria: $RES2"
+	echo "	Resolución pantalla secundaria: $RES2"
 	echo "	Tasa de refresco: $FPS fps"
 	echo "	Duracion de la grabacion: $RECORDTIME "
 	echo "	Duración de las sesiones de video: $SESSIONTIME minutos"
@@ -87,21 +91,32 @@ grabacion()
 #-----------------------------------------------------------------------------------
 
 #Code
-echo "Script basado en FFMPEG para la configuración de una nueva sesión de video."
-echo "Asistente par la creación de una sesión de grabación"
-echo
-echo "Configuración de la sesión de grabación: "
+tput cup 1 1
+echo "Asistente para la creación de una sesión de grabación"
+
+tput cup 3 2
+tput sgr0
+echo "Introduzca los siguientes parámetros:"
+tput cup 5 3
 read -p "Nombre de la sesión: " SESSION
-echo "Directorio actual -> " `pwd`
+tput cup 6 3
 read -p "Ruta a los archivos FFmpeg: " RUTAFFMPEG
+tput cup 7 3
 read -p "Ruta al directorio de grabación deseado: " RUTAVIDEOS
-echo "	-Selección de la(s) resolucion(es) de las pantallas "
+tput cup 8 3
+echo "Selección de la(s) resolucion(es) de las pantallas: "
 gnome-terminal --tab -e "bash resoluciones.sh"
-read -p "Resolución pantalla principal: " RES1
-read -p "Resolución pantalla secundaria: " RES2
-read -p "	-¿Frecuencia de refresco?(10fps es lo óptimo): " FPS
-read -p "	-Duración de la sesión de grabación(hh:mm:ss): " RECORDTIME
-read -p "	-Duración de los videos generados (minutos): " SESSIONTIME
+tput cup 9 3
+read -p "	-Resolución pantalla principal: " RES1
+tput cup 10 3
+read -p "	-Resolución pantalla secundaria: " RES2
+tput cup 11 3
+read -p "¿Frecuencia de refresco?(10fps es lo óptimo): " FPS
+tput cup 12 3
+read -p "Duración de la sesión de grabación(hh:mm:ss): " RECORDTIME
+tput cup 13 3
+read -p "Duración de los videos generados (minutos): " SESSIONTIME
+echo
 
 POS1=0
 OIFS=$IFS && IFS='x' read -a array <<< "$RES1" && POS2=${array[0]} && IFS=$OIFS
