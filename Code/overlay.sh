@@ -37,7 +37,6 @@ echo $video1
 echo $video2
 echo $audio
 
-sleep 10
 cd ~/bin && ./ffmpeg -i $video1 -i $video2 -i $audio  -filter_complex "[0:v]setpts=PTS-STARTPTS, pad=iw*2:ih[bg]; \
 [1:v]setpts=PTS-STARTPTS[fg]; [bg][fg]overlay=w" $output
 

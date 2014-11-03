@@ -10,5 +10,5 @@ ultrafast
 00:01:00
 30
 
-#Configuración para la generación de videos con una calidad buena y tasa de compresión alta, un #poco más lento
+#Configuración para la generación de videos con una calidad buena y tasa de compresión alta, un poco más lento
 

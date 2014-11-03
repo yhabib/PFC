@@ -41,13 +41,21 @@ while true; do
 
 	tput cup 11 15
 	echo "5. Información"
-	 
+
+	tput bold
+	tput cup 12 15
+	echo "	1 Información de uso"
+	tput cup 13 15
+	echo "	2 Información de licencias" 
+	tput cup 14 15
+	echo "	3 Volver a la anterior ventana"  
+	
 	tput cup 15 15
 	echo "6. Salir"
 	 
 	# Seleccionamos modo "negrita"
 	tput bold
-	tput cup 16 15
+	tput cup 17 15
 	read -p "Enter your choice [1-3] " opcion
 
 case $opcion in
