@@ -18,24 +18,13 @@
 clear
 
 #Variables
-declare video1
-declare video2
-declare audio
-declare output
-declare folder=$1
+declare video1=$1
+declare video2=$2
+declare audio=$3
+declare output=$4
 #------------------------------------------------------------------------------------------------------------------------_
 
 #Code
-#cd $folder 
-video1=$folder/Pantalla1.mp4
-video2=$folder/Pantalla2.mp4
-audio=$folder/Audio.mp3
-output=$folder/Overlay.mp4
-
-echo $folder
-echo $video1
-echo $video2
-echo $audio
 
 cd ~/bin && ./ffmpeg -i $video1 -i $video2 -i $audio  -filter_complex "[0:v]setpts=PTS-STARTPTS, pad=iw*2:ih[bg]; \
 [1:v]setpts=PTS-STARTPTS[fg]; [bg][fg]overlay=w" $output

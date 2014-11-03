@@ -22,6 +22,7 @@ declare folder
 
 #Code
 path=~/Proyecto/Grabaciones
+softwarePath=`pwd`
 
 tput sgr0
 tput bold
@@ -49,10 +50,16 @@ video=$folder/Pantalla1Audio.mp4
 audio=$folder/Audio.mp3
 output=$folder/Overlay.mp4
 
+
+#Genero archivo overlay con pantalla1, pantalla2, y audio
+cd $softwarePath && gnome-terminal --tab -e "bash overlay.sh $video1 $video2 $audio $output"
+
 #Concateno audio y pantalla1
 cd ~/bin && ./ffmpeg -i $video1 -i $audio -c:v copy -c:a aac -strict experimental $video
 
 #Genero archivo overlay con pantalla1, pantalla2, y audio
-cd ~/bin && ./ffmpeg -i $video1 -i $video2 -i $audio  -filter_complex "[0:v]setpts=PTS-STARTPTS, pad=iw*2:ih[bg]; \
-[1:v]setpts=PTS-STARTPTS[fg]; [bg][fg]overlay=w" $output
+
+
+#cd ~/bin && ./ffmpeg -i $video1 -i $video2 -i $audio  -filter_complex "[0:v]setpts=PTS-STARTPTS, pad=iw*2:ih[bg]; \
+#[1:v]setpts=PTS-STARTPTS[fg]; [bg][fg]overlay=w" $output
 
