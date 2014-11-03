@@ -5,7 +5,7 @@
 #***********************************************************************************************************************
 
 #-----------------------------------------------------------------------------------------------------------------------
-#Extiende las opciones del Menu maestro
+#	Extiende las opciones del Menu maestro
 #-----------------------------------------------------------------------------------------------------------------------
 
 
@@ -46,22 +46,26 @@ while true; do
 	tput cup 12 15
 	echo "	1 Información de uso"
 	tput cup 13 15
-	echo "	2 Información de licencias" 
+	echo "	2 Información de instalación"
 	tput cup 14 15
-	echo "	3 Volver a la anterior ventana"  
-	
+	echo "	3 Información de licencias" 
 	tput cup 15 15
+	echo "	4 Volver a la anterior ventana"  
+	
+	tput sgr0
+	tput cup 16 15
 	echo "6. Salir"
 	 
 	# Seleccionamos modo "negrita"
 	tput bold
-	tput cup 17 15
+	tput cup 18 15
 	read -p "Enter your choice [1-3] " opcion
 
 case $opcion in
-	1) bash saveSession.sh;;
-	2) bash record.sh;;
-	3) exit -1;;
+	1) bash userGuide.sh;;
+	2) bash installationGuide.sh;;
+	3) bash credits.sh;;
+	4) exit -1;;
 *)	 
 	tput clear
 	tput sgr0
