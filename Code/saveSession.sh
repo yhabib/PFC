@@ -24,6 +24,8 @@ declare RES1
 declare RES2
 declare POS1
 declare POS2
+declare CRF
+declare PRESET
 declare FPS
 declare RECORDTIME
 declare SESSIONTIME
@@ -68,7 +70,11 @@ showConfig()
 	echo "	Ruta al directorio de grabación deseado:  $RUTAVIDEOS"
 	echo "	Resolución pantalla principal: $RES1"
 	echo "	Resolución pantalla secundaria: $RES2"
-	echo "	Tasa de refresco: $FPS fps"
+	echo "	Posición pantalla principal: $POS1"
+	echo "	Posición pantalla secundaria: $POS2"
+	echo "	Tasa de refresco: $FPS fps"	
+	echo "	Valor de CRF: $CRF"
+	echo "	Valor de preset: $PRESET"
 	echo "	Duracion de la grabacion: $RECORDTIME "
 	echo "	Duración de las sesiones de video: $SESSIONTIME minutos"
 	echo "	Posiciones de los monitores: Principal: $POS1  Secundaria: $POS2"
@@ -85,6 +91,8 @@ grabacion()
 	echo $POS1 >> $SESSION
 	echo $POS2 >> $SESSION
 	echo $FPS >> $SESSION
+	echo $CRF >> $SESSION
+	echo $PRESET >> $SESSION
 	echo $RECORDTIME >> $SESSION
 	echo $SESSIONTIME>> $SESSION
 }
@@ -104,17 +112,25 @@ read -p "Ruta a los archivos FFmpeg: " RUTAFFMPEG
 tput cup 7 3
 read -p "Ruta al directorio de grabación deseado: " RUTAVIDEOS
 tput cup 8 3
-echo "Selección de la(s) resolucion(es) de las pantallas: "
+echo "Selección de las resoluciones y posiciones de las pantallas: "
 gnome-terminal --tab -e "bash resoluciones.sh"
 tput cup 9 3
 read -p "	-Resolución pantalla principal: " RES1
 tput cup 10 3
 read -p "	-Resolución pantalla secundaria: " RES2
 tput cup 11 3
-read -p "¿Frecuencia de refresco?(10fps es lo óptimo): " FPS
+read -p "	-Posición pantalla principal: " POS1
 tput cup 12 3
-read -p "Duración de la sesión de grabación(hh:mm:ss): " RECORDTIME
+read -p "	-Posición pantalla secundaria: " POS2
 tput cup 13 3
+read -p "-Frecuencia de refresco(10fps es lo óptimo): " FPS
+tput cup 14 3
+read -p "-Indique valor de CRF: " CRF
+tput cup 15 3
+read -p "-Indique valor de preset: " PRESET
+tput cup 16 3
+read -p "Duración de la sesión de grabación(hh:mm:ss): " RECORDTIME
+tput cup 17 3
 read -p "Duración de los videos generados (minutos): " SESSIONTIME
 echo
 

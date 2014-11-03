@@ -13,6 +13,8 @@
 declare FILE
 declare RES1
 declare RES2
+declare CRF
+declare PRESET
 declare FPS
 declare RECORDTIME
 declare POS1
@@ -23,6 +25,10 @@ declare POS2
 while read line; do 
     RES1=$line
     RES2=$line
+    POS1=$line
+    POS2=$line
+    CRF=$line
+    PRESET=$line
     FPS=$line
     RECORDTIME=$line
     POS1=$line

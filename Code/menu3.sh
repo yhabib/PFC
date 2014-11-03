@@ -5,7 +5,7 @@
 #***********************************************************************************************************************
 
 #-----------------------------------------------------------------------------------------------------------------------
-#Extiende las opciones del Menu maestro
+#	Extiende las opciones del Menu maestro
 #-----------------------------------------------------------------------------------------------------------------------
 
 
@@ -39,20 +39,20 @@ while true; do
 	tput cup 10 15
 	echo "4. Instalación software"
 
-	tput bold
 	tput cup 11 15
-	echo "	1 Descargar Software"
-	tput cup 12 15
-	echo "	2 Instalación sin internet" 
-	tput cup 13 15
-	echo "	2 Instalación con internet"
-	tput cup 14 15
-	echo "	4 Volver a la anterior ventana" 
-
-	tput sgr0
-	tput cup 15 15
 	echo "5. Información"
 
+	tput bold
+	tput cup 12 15
+	echo "	1 Información de uso"
+	tput cup 13 15
+	echo "	2 Información de instalación"
+	tput cup 14 15
+	echo "	3 Información de licencias" 
+	tput cup 15 15
+	echo "	4 Volver a la anterior ventana"  
+	
+	tput sgr0
 	tput cup 16 15
 	echo "6. Salir"
 	 
@@ -62,9 +62,9 @@ while true; do
 	read -p "Enter your choice [1-4] " opcion
 
 case $opcion in
-	1) bash downloadSoft;;
-	2) bash instal.sh;;
-	3) asdad;;
+	1) bash userGuide.sh;;
+	2) bash installationGuide.sh;;
+	3) bash credits.sh;;
 	4) exit -1;;
 *)	 
 	tput clear

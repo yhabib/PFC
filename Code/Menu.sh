@@ -54,8 +54,8 @@ case $opcion in
 	1) bash Menu2.sh;;
 	2) bash generacionArchivos.sh;;
 	3) bash reproduccion.sh;;
-	4) uname -r;;
-	5) uname -r;;
+	4) bash Menu4.sh;;
+	5) bash menu3.sh;;
 	6) echo "Adiós";
 	   exit 1;;
 *)	 

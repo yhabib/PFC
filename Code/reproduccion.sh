@@ -24,7 +24,7 @@ path=~/Proyecto/Grabaciones
 tput sgr0
 tput bold
 tput cup 1 1
-echo "Script basado en FFmpeg para la generación de los archivos finales"
+echo "Script basado en FFmpeg para la de una sesión en modo multipantalla"
 cd $path
 tput sgr0
 tput cup 3 2
