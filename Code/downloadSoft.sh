@@ -29,33 +29,17 @@ gotDirectorio()
 		cd $1
 }
 
-#Extrae el archivo comprimido que se le pasa como argumento. Para ello compara su extensión con las
-#listadas y en función de eso aplica una determinada descompresión.
-extract () {
-    if [ -f $1 ] ; then
-      case $1 in
-        *.tar.bz2)   tar xjf $1     ;;
-        *.tar.gz)    tar xzf $1     ;;
-        *.bz2)       bunzip2 $1     ;;
-        *.rar)       unrar e $1     ;;
-        *.gz)        gunzip $1      ;;
-        *.tar)       tar xf $1      ;;
-        *.tbz2)      tar xjf $1     ;;
-        *.tgz)       tar xzf $1     ;;
-        *.zip)       unzip $1       ;;
-        *.Z)         uncompress $1  ;;
-        *.7z)        7z x $1        ;;
-        *)     echo "'$1' cannot be extracted via extract()" ;;
-         esac
-     else
-         echo "'$1' is not a valid file"
-     fi
-}
 #----------------------------------------------------------------------------------------------------------------------------
 
-#Code
+#Code -> PROBAR ESO
 
+tput clear
+tput cup 3 9 
+echo "Script encargado de la descarga de todo el software necesario"
+tput cup 4 9
+read -p "Indtroduzca por favor la ruta hasta el directorio en el que quiere almacenar todo el software descargado." directorio
 gotDirectorio $directorio
+
 
 wget http://www.tortall.net/projects/yasm/releases/yasm-1.3.0.tar.gz
 wget http://downloads.xvid.org/downloads/xvidcore-1.3.2.tar.gz
