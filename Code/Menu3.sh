@@ -59,7 +59,7 @@ while true; do
 	# Seleccionamos modo "negrita"
 	tput bold
 	tput cup 18 15
-	read -p "Enter your choice [1-3] " opcion
+	read -p "Enter your choice [1-4] " opcion
 
 case $opcion in
 	1) bash userGuide.sh;;
