@@ -51,10 +51,10 @@ while true; do
 	read -p "Enter your choice [1-6] " opcion
 
 case $opcion in
-	1) bash Menu2.sh;;
+	1) bash menu2.sh;;
 	2) bash generacionArchivos.sh;;
 	3) bash reproduccion.sh;;
-	4) bash Menu4.sh;;
+	4) bash menu4.sh;;
 	5) bash menu3.sh;;
 	6) echo "Adiós";
 	   exit 1;;
